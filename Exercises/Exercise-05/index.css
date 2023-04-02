@@ -1,0 +1,7 @@
+*{
+  background: radial-gradient(circle at center,yellowgreen,yellow);
+}
+.container {
+  text-align: center;
+  color: blueviolet;
+}

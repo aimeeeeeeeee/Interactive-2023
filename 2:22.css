@@ -1,0 +1,53 @@
+:root{
+	font-size:10px;
+
+}
+
+h1{
+	font-size: 5rem;
+	display: inline-block;
+	padding: 0 5rem;
+	color: white;
+
+}
+
+#cover{
+	background-image: linear-gradient(45deg,blueviolet,palegreen,burlywood);
+	padding: 5rem;
+}
+
+.illustration{
+	background-color: magenta;
+	padding: 5rem;
+	display: inline-block;
+	width: 50%;
+}
+
+.circle{
+	width: 10rem;
+	height: 10rem;
+	border-radius: 100%;
+	background-color: gainsboro;
+	filter: blur(5px);
+	mix-blend-mode: lighten;
+	margin: auto;
+}
+
+.text{
+	color: gold;
+	background-color: lavender;
+	padding: 5rem;
+	display: inline-block;
+	width: 50%;
+}
+
+.container{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+@media print and (orientation: portrait) {
+	
+}

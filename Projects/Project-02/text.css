@@ -1,0 +1,33 @@
+.container {
+  text-align: center;
+  color: white;
+
+
+  font-size:50px;
+  font-family: Gotham Rounded,sans-serif;
+}
+
+.text{
+  text-align: center;
+
+  color: white;
+
+  font-size:25px;
+  font-family: Gotham Rounded,sans-serif;
+}
+.content{
+  text-align: center;
+  padding: 120px;
+  color: white;
+
+
+  font-size:18px;
+  font-family: Gotham Rounded,sans-serif;
+}
+
+@media print and (orientation: portrait) {
+  #fade_out img {
+  position:relative;
+  display: block;
+  }
+}
