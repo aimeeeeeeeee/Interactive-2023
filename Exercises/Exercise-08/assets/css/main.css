@@ -35,7 +35,7 @@ body
 }
 .cat .ear{
   background:#fff;
-  position:relative;
+  position:absolute;
   z-index:-1;
 }
 .cat .ear.left{
