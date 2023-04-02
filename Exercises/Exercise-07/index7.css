@@ -15,7 +15,7 @@
 
 
 #heart::before, #heart::after {
-  content: "";
+  
   position: absolute;
   top: 0;
   width: 52px;
