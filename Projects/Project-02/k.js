@@ -1,6 +1,6 @@
 const kaleidoscope = document.getElementById('kaleidoscope');
-const backgroundImage = 'url("4.png")';
-const pieces = 6;
+const backgroundImage = 'url("5.png")';
+const pieces = 10;
 
 function createPiece() {
   const piece = document.createElement('div');
@@ -26,7 +26,7 @@ function initKaleidoscope() {
   for (let i = 0; i < pieces; i++) {
     kaleidoscope.appendChild(createPiece());
   }
-  updatePieces(window.innerWidth / 2, window.innerHeight / 2);
+  updatePieces(window.innerWidth / 4, window.innerHeight / 4);
 }
 
 initKaleidoscope();
