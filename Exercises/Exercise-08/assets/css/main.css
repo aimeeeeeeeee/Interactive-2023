@@ -21,30 +21,30 @@ body {
 
 /* this is where you can style the objects in your still life */
 
-.body{
-	position:absolute;
+body
+.cat{
+  position:absolute;
   background:#fff;
   width:150px;
   height:120px;
   margin:auto;
   border-radius:150px 150px 50% 50%;
-  left:30%;
+  left:50%;
   top:50%;
   margin:-60px 0 0 -75px
 }
-
-.cat .ear.left{
+.cat .ear{
   background:#fff;
   position:relative;
   z-index:-1;
-
+}
+.cat .ear.left{
   width:50px;
   height:50px;
   border-radius:8px 20px 20px 20px;
   left:5px;
   top:5px;
 }
-
 .cat .ear.left:before{
   content:'';
   display:block;
@@ -88,4 +88,107 @@ body {
   height:5px;
   top:50px;
   border-radius:50%;
+}
+.cat .eye:before{
+  content:'';
+  display:block;
+  width:14px;
+  height:11px;
+  background:#000;
+  border-radius:50%;
+  margin:-3px auto;
+}
+.cat .eye.left{
+  left:50px;
+  margin:0 0 0 -15px;
+}
+.cat .eye.right{
+  right:50px;
+  margin:0 -15px 0 0;
+}
+.cat .nose{
+  width:16px;
+  height:10px;
+  background:#000;
+  border-radius:50%;
+  position:absolute;
+  top:65px;
+  left:50%;
+  margin:0 0 0 -8px
+}
+.cat .nose:before{
+  content:'';
+  display:block;
+  background:#fff;
+  width:18px;
+  height:12px;
+  border-radius:50%;
+  position:absolute;
+  left:-10px;
+  top:6px;
+}
+.cat .nose:after{
+  content:'';
+  display:block;
+  background:#fff;
+  width:18px;
+  height:12px;
+  border-radius:50%;
+  position:absolute;
+  left:8px;
+  top:6px;
+}
+.cat .mouth{
+  border:3px solid #000;
+  width:12px;
+  height:12px;
+  border-right:0;
+  border-bottom:0;
+  position:absolute;
+  left:68px;
+  top:79px;
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+.cat .mouth:before{
+  content:'';
+  display:block;
+  width:5px;
+  border-top:3px solid #000;
+  position:absolute;
+  left:-6px;
+  top:-5px;
+  transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+}
+.cat .mouth:after{
+  content:'';
+  display:block;
+  width:10px;
+  height:10px;
+  border:3px solid #000;
+  border-radius:0 0 30px 50%;
+  border-left:0;border-top:0;
+  border-bottom-width:2px;
+  position:absolute;
+  left:-13px;
+  top:8px;
+}
+.cat .pink{
+  width:3px;
+  height:10px;
+  border:9px double pink;
+  border-top:0;
+  border-bottom:0;
+  transform:skew(-25deg);
+  -webkit-transform:skew(-25deg);
+  position:absolute;
+}
+.cat .pink.left{
+  left:27px;
+  top:70px;
+}
+.cat .pink.right{
+  left:100px;
+  top:70px;
 }
