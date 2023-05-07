@@ -1,0 +1,35 @@
+.container{
+	background-color: black;
+	display: flex;
+	width: 500px;
+	flex-direction: row-wrap;
+	align-items: flex-start;
+	
+}
+
+.item-1{
+
+background-color: beige;
+flex: 1;
+order: 2;
+}
+
+.item-2{
+	background-color: burlywood;
+	flex: 1;
+	order: 4;
+	
+}
+
+.item-3{
+	background-color: blueviolet;
+	flex: 2;
+	order: 2;
+	
+}
+
+.item-4{
+	background-color: blanchedalmond;
+	flex:1;
+	order: 3;
+}
