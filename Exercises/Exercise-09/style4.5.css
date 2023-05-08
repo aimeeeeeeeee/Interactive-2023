@@ -1,6 +1,4 @@
-body{
-	background: lightcoral;
-}
+
 .container{
 	width:100%;
 	height: 100%;
@@ -19,7 +17,7 @@ body{
 	margin-right: auto;
 }
 
-@media screen and (max-width:768px) and (orientation: landscape){
+@media screen and (max-width:768px){
 	body{
 		background-color: black;
 	}
@@ -33,4 +31,24 @@ body{
 		border-radius: 10%;
 		background-color: blueviolet;
 	}
+}
+@media screen and (max-width:320px){
+	body{
+		background-color: blanchedalmond;
+	}
+}
+
+@media screen and (max-width:1024px){
+	body{
+	background: lightcoral;
+}
+ .shape {
+      display: block;
+      width: 126px;
+      height: 180px;
+      background-color: red;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    }
+
+
 }

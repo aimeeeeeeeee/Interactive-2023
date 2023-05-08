@@ -1,40 +1,53 @@
-#heart {
-   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-  animation: beat .25s infinite alternate;
-  transform-origin: center;
-
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: palegoldenrod;
 }
 
-@keyframes beat{
-  to { transform: scale(1.4);opacity:0.5 }
+.heart {
+    background-color: red;
+    position: relative;
+    transform: scale(1.5);
+    animation: shake 1s infinite;
+    z-index: -1;
 }
 
+.heart:before,
+    .heart:after {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: 0;
+      width: 50px;
+      height: 80px;
+      background: red;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+    .heart:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
 
-
-#heart::before, #heart::after {
-  
-  position: absolute;
-  top: 0;
-  width: 52px;
-  height: 80px;
-  border-radius: 50px 50px 0 0;
-  background: red;
-}
-
-#heart::before {
-  left: 50px;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
-}
-
-#heart::after {
-  left: 0;
-  transform: rotate(45deg);
-  transform-origin: 100% 100%;
-}
-
-
+@keyframes shake {
+    0%, 100% {
+        transform: translate(0) scale(1.5);
+        background-color: rgba(255, 0, 0, 1);opacity: 1;
+    }
+    25% {
+        transform: translate(-5px, 5px) scale(1.4);
+        background-color: rgba(255, 0, 0, 0.8);opacity: 0.2;
+    }
+    50% {
+        transform: translate(5px, -5px) scale(1.6);
+        background-color: rgba(255, 0, 0, 0.6);opacity: 0.5;
+    }
+    75% {
+        transform: translate(-5px, 5px) scale(1.4);
+        background-color: rgba(255, 0, 0, 0.8);opacity: 0.8;
+    }
 }

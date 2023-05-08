@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.calendar {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.month-year {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.days,
+.dates {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.day-name,
+.date {
+  width: calc(100% / 7);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.day-name {
+  font-weight: bold;
+}
+
+.date {
+  line-height: 30px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+}
